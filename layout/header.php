@@ -7,7 +7,7 @@
     </a>
 
     <nav class="nav-links">
-
+  <a href="<?php echo BASE_URL; ?>">Home</a>
       <a href="<?php echo BASE_URL; ?>#tools">Tools</a>
 
       <!-- Mega Dropdown -->
@@ -75,7 +75,7 @@
             <div class="mega-column">
               <h4>🛠 Utility Tools</h4>
 
-              <a href="qr-generator.php">
+              <a href="<?php echo BASE_URL; ?>tools/Qrcodegenerator.php">
                 QR Code Generator
               </a>
 
@@ -100,7 +100,7 @@
             <div class="mega-column">
               <h4>🚀 SEO Tools</h4>
 
-              <a href="keyword-density-checker.php">
+              <a href="<?php echo BASE_URL; ?>tools/keywordchecker.php">
                 Keyword Density Checker
               </a>
 
