@@ -29,7 +29,7 @@
                 Compound Calculator
               </a>
 
-              <a href="risk-reward-calculator.php">
+              <a href="<?php echo BASE_URL; ?>tools/riskreward.php">
                 Risk Reward Calculator
               </a>
 
