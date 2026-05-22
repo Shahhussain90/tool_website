@@ -21,6 +21,7 @@
       color: var(--text);
       line-height: 1.6;
       overflow-x: hidden;
+      width: 100vw;
     }
 
     a {
@@ -37,147 +38,244 @@
       margin-inline: auto;
     }
 
-    /* Navbar */
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      /* backdrop-filter: blur(12px); */
-      background: rgba(11, 16, 32, 0.8);
-      border-bottom: 1px solid var(--border);
-    }
+   /* =========================================
+   RESPONSIVE NAVBAR
+========================================= */
 
-    .nav-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 0;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    .logo span {
-      color: var(--primary);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover {
-      color: var(--text);
-    }
-
-    .nav-btn {
-      padding: 12px 18px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    .nav-btn:hover {
-      transform: translateY(-2px);
-    }
-
-    /* =========================
-   Mega Dropdown
-========================= */
-
-.mega-dropdown {
-  position: static;
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(11,16,32,0.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
 }
 
-.mega-btn {
-  background: transparent;
-  border: none;
-  color: var(--muted);
-  font-size: 0.95rem;
-  cursor: pointer;
-  font-family: inherit;
-  transition: 0.3s ease;
+.nav-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  min-height:80px;
+  position:relative;
+  /* border: 1px solid red; */
 }
 
-.mega-btn:hover {
-  color: var(--text);
+/* =========================================
+   LOGO
+========================================= */
+
+.logo{
+  font-size:1.5rem;
+  font-weight:800;
+  letter-spacing:-0.5px;
+  white-space:nowrap;
+  flex-shrink:0;
 }
 
-.mega-menu {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  background: #0f172a;
-  border-top: 1px solid var(--border);
-  padding: 45px 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition: 0.35s ease;
-  z-index: 999;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+.logo span{
+  color:var(--primary);
 }
 
-.mega-dropdown:hover .mega-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  color:var(--muted);
+  font-size:0.95rem;
 }
 
-.mega-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
+.nav-links a{
+  transition:0.25s ease;
 }
 
-.mega-column h4 {
-  font-size: 1rem;
-  margin-bottom: 18px;
-  color: white;
+.nav-links a:hover{
+  color:var(--text);
 }
 
-.mega-column a {
-  display: block;
-  padding: 10px 0;
-  color: var(--muted);
-  transition: 0.3s ease;
-  font-size: 0.95rem;
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.nav-btn{
+  padding:12px 18px;
+  border-radius:12px;
+  background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+
+  font-weight:600;
+  transition:0.3s ease;
+  white-space:nowrap;
+  flex-shrink:0;
 }
 
-.mega-column a:hover {
-  color: #c7d2fe;
-  transform: translateX(4px);
+.nav-btn:hover{
+  transform:translateY(-2px);
 }
 
-/* Mobile */
-@media (max-width: 900px) {
+/* =========================================
+   MEGA MENU
+========================================= */
 
-  .mega-menu {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
+.mega-dropdown{
+  position:relative;
+  /* border: 1px solid red; */
+}
+
+.mega-btn{
+  background:transparent;
+  border:none;
+  color:var(--muted);
+  font-size:0.95rem;
+  cursor:pointer;
+  font-family:inherit;
+  transition:0.25s ease;
+}
+
+.mega-btn:hover{
+  color:var(--text);
+}
+
+.mega-menu{
+  position:absolute;
+  left:50%;
+  top:180%;
+  transform:translateX(-50%) translateY(10px);
+
+  width:min(1200px,95vw);
+
+  background:#0f172a;
+
+  border:1px solid var(--border);
+  /* border: 1px solid red; */
+
+  border-radius:24px;
+
+  padding:40px;
+
+  opacity:0;
+  visibility:hidden;
+
+  transition:0.35s ease;
+
+  z-index:999;
+
+  box-shadow:0 20px 50px rgba(0,0,0,0.45);
+}
+
+.mega-dropdown:hover .mega-menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(-50%) translateY(0);
+}
+
+.mega-content{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:40px;
+  /* border: 1px solid red; */
+}
+
+.mega-column h4{
+  font-size:1rem;
+  margin-bottom:18px;
+  color:white;
+}
+
+.mega-column a{
+  display:block;
+  padding:10px 0;
+  color:var(--muted);
+  transition:0.25s ease;
+  font-size:0.95rem;
+}
+
+.mega-column a:hover{
+  color:#c7d2fe;
+  transform:translateX(4px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width:1100px){
+
+  .nav-wrapper{
+    gap:18px;
+  }
+
+  .nav-links{
+    gap:18px;
+    font-size:0.9rem;
+  }
+
+  .nav-btn{
+    padding:10px 14px;
+    font-size:0.9rem;
+  }
+
+  .mega-content{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:768px){
+ 
+  .nav-btn{
     display: none;
-    padding: 25px 0;
+  }
+  .mega-menu{
+  position: fixed;
+  top:100%;
+  transform:translateX(-50%) translateY(10px);
+  width:min(1200px,95vw);
+
+ 
+
+ 
+}
+  nav-wrapper{
+  gap:12px;}
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width:480px){
+
+  .logo{
+    font-size:1.3rem;
   }
 
-  .mega-dropdown:hover .mega-menu {
-    display: block;
+  .nav-links{
+    padding:14px;
   }
 
-  .mega-content {
-    grid-template-columns: 1fr;
-    gap: 25px;
+  .mega-menu{
+    padding:18px;
+  }
+
+  .mega-column a{
+    font-size:0.9rem;
   }
 
 }
+
+
 
     /* Hero */
     .hero {
@@ -462,9 +560,7 @@
     }
 
     @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-      }
+      
 
       .hero {
         padding-top: 70px;
