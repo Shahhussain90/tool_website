@@ -3,7 +3,7 @@
   <div class="container nav-wrapper">
 
     <a href="<?php echo BASE_URL; ?>" class="logo">
-      Tool<span>Nova</span>
+      <img src="<?php echo BASE_URL; ?>files/images/logo_main2.png" alt="ToolNova Logo">
     </a>
 
     <nav class="nav-links">

@@ -8,6 +8,11 @@
     <meta name="keywords" content="focus timer, pomodoro timer, productivity dashboard, task manager, study timer, countdown timer, work timer, focus app">
     <meta name="author" content="ToolNova">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="../files/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../files/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../files/images/favicon-16x16.png">
+    <link rel="manifest" href="../files/images/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -356,7 +361,9 @@ include '../layout/header.php';
     <div>
         <div class="tool-panel" style="margin-bottom:1rem;">
             <div class="tool-panel-header">
-                <span class="tool-panel-title">Timer Settings</span>
+                <span class="tool-panel-title">Timer Settings <button class="focus-btn danger" onclick="resetAllStats()">
+    Reset Stats to 0
+</button></span>
             </div>
             <div class="tool-panel-body">
 
@@ -1133,6 +1140,32 @@ setInterval(updatePageTitle, 1000);
 // BOOT
 // ═══════════════════════════════════════════════════
 init();
+function resetAllStats() {
+    // reset runtime variables
+    state.sessionCount = 0;
+    todayFocusSeconds = 0;
+
+    // reset task progress (optional: keep tasks or clear done status)
+    tasks.forEach(t => {
+        t.done = false;
+        t.elapsed = 0;
+    });
+
+    // reset history
+    history = [];
+
+    // reset UI
+    updateMetrics();
+    renderTasks();
+    renderHistory();
+    renderWeekChart();
+
+    // reset storage
+    saveToStorage();
+
+    // reset timer display too
+    resetTimer();
+}
 </script>
 
 </body>

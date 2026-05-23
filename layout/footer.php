@@ -6,8 +6,8 @@
         <a href="#tools">Tools</a>
         <!-- <a href="#guides">Guides</a> -->
         <a href="#faq">FAQ</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="../files/privacypolicy.php">Privacy Policy</a>
+        <a href="files/terms.php">Terms of Service</a>
       </div>
 
       <p>

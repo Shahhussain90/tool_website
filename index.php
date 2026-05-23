@@ -10,6 +10,11 @@
   <meta name="keywords" content="free online tools, trading calculator, qr generator, hashtag generator, compound calculator, utility tools, creator tools" />
   <meta name="author" content="ToolNova" />
 
+  <link rel="apple-touch-icon" sizes="180x180" href="files/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="files/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="files/images/favicon-16x16.png">
+  <link rel="manifest" href="files/images/site.webmanifest">
+
   <!-- Open Graph -->
   <meta property="og:title" content="ToolNova - Free Online Tools" />
   <meta property="og:description" content="Modern online tools for creators, traders, developers, and students." />
@@ -23,6 +28,9 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 />
+  
+
+
   <link rel="stylesheet" href="css/style.css" />
 
   
@@ -115,7 +123,7 @@
           <div class="tool-icon">📊</div>
           <h3>Compound Calculator</h3>
           <p>Calculate compounded profits for trading and investing strategies.</p>
-          <a href="<?php echo BASE_URL ?>tools/compound_calculator.ph">Open Tool →</a>
+          <a href="<?php echo BASE_URL ?>tools/compound_calculator.php">Open Tool →</a>
         </div>
 
         <div class="tool-card">
@@ -217,9 +225,9 @@
 
       <div class="section-header">
         <span>Why Choose ToolNova</span>
-        <h2>Fast, Free & SEO-Friendly Online Tools</h2>
+        <h2>🆓 Free to Use</h2>
         <p>
-          ToolNova provides modern online tools optimized for performance, accessibility, and ease of use.
+          All core tools are accessible without any cost, making powerful utilities available to everyone.
         </p>
       </div>
 
@@ -233,16 +241,16 @@
         </div>
 
         <div class="content-card">
-          <h3>📱 Mobile Optimized</h3>
+          <h3>🛠️ Wide Range of To</h3>
           <p>
-            Every page is fully responsive and designed to work seamlessly across smartphones, tablets, and desktops.
+           From calculators to converters and productivity utilities, everything you need is available in one centralized platform.
           </p>
         </div>
 
         <div class="content-card">
-          <h3>🔍 Search Engine Friendly</h3>
+          <h3>🌐 No Installation Required</h3>
           <p>
-            Structured SEO content, internal linking, fast page speed, and optimized metadata help improve discoverability.
+            Use all tools directly in your browser without downloading or installing any software.
           </p>
         </div>
 
@@ -263,30 +271,30 @@
       <div class="content-grid">
 
         <div class="content-card">
-  <h3>Are these tools SEO friendly?</h3>
+  <h3>What is this website used for?</h3>
   <p>
-    Yes, our tools are built with clean URLs, fast loading performance, proper meta structures, and search engine optimized pages.
+    This platform provides a collection of online tools designed to help with calculations, conversions, productivity, and daily digital tasks—all in one place.
   </p>
 </div>
 
 <div class="content-card">
-  <h3>Do these tools help improve website SEO?</h3>
+  <h3>Are the tools free to use?</h3>
   <p>
-    Many of our utilities help with SEO tasks such as meta tag generation, keyword formatting, text optimization, and performance improvements.
+    Yes, all core tools are completely free to use with no hidden charges or subscription requirements.
   </p>
 </div>
 
 <div class="content-card">
-  <h3>Are your tool pages indexed on Google?</h3>
+  <h3>Is my data safe while using these tools?</h3>
   <p>
-    Yes, our pages are optimized for search engine indexing to help users easily discover tools through Google and other search engines.
+    Yes, most tools run directly in your browser and we do not store any sensitive user data.
   </p>
 </div>
 
 <div class="content-card">
-  <h3>Is page speed optimized for SEO?</h3>
+  <h3>What types of tools are available?</h3>
   <p>
-    Absolutely. Fast loading speeds, responsive layouts, and optimized code help improve both user experience and search rankings.
+    The platform includes calculators, converters, utility tools, and productivity helpers for everyday use.
   </p>
 </div>
 
@@ -298,9 +306,9 @@
 </div>
 
 <div class="content-card">
-  <h3>Are the tools mobile optimized?</h3>
+  <h3>Can I suggest a new tool?</h3>
   <p>
-    Yes, every tool is fully responsive and designed to work smoothly on smartphones, tablets, and desktops.
+   Yes, user suggestions are welcome and can be added to future updates based on demand and usefulness.
   </p>
 </div>
 
