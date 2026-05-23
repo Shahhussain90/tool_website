@@ -48,10 +48,10 @@
 
             <!-- Creator -->
             <div class="mega-column">
-              <h4>🔥 Creator Tools</h4>
+              <h4>🔥 study tools</h4>
 
-              <a href="<?php echo BASE_URL; ?>tools/hashtaggenerator.php">
-                Hashtag Generator
+              <a href="<?php echo BASE_URL; ?>tools/time.php">
+                study timer
               </a>
 
               <!-- <a href="ai-hook-generator.php">
