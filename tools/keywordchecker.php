@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>Keyword Density Checker - Free SEO Keyword Analyzer | ToolNova</title>
+  <title>Keyword Density Checker - Free SEO Keyword Analyzer | VoltTools</title>
 
   <meta
     name="description"
@@ -17,7 +17,7 @@
     name="keywords"
     content="keyword density checker, seo keyword analyzer, keyword frequency checker, seo content tool, keyword counter, free seo tools">
 
-  <meta name="author" content="ToolNova">
+  <meta name="author" content="VoltTools">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

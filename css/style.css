@@ -457,6 +457,8 @@
       background: linear-gradient(135deg, rgba(99,102,241,0.12), transparent);
       opacity: 0;
       transition: 0.35s ease;
+      pointer-events: none;
+      z-index: 0;
     }
 
     .tool-card:hover::before {
@@ -467,6 +469,10 @@
       transform: translateY(-6px);
       border-color: rgba(99,102,241,0.4);
     }
+    .tool-card * {
+  position: relative;
+  z-index: 2;
+}
 
     .tool-icon {
       width: 60px;

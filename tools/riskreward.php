@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title>Risk Reward Calculator - Trading Position Size Tool | ToolNova</title>
+    <title>Risk Reward Calculator - Trading Position Size Tool | VoltTools</title>
     <meta name="description" content="Calculate risk reward ratio, position size, profit targets and stop loss levels for forex, crypto and stock trading with our free risk reward calculator.">
     <meta name="keywords" content="risk reward calculator, trading position size, stop loss calculator, profit target, forex risk management, trading calculator">
-    <meta name="author" content="ToolNova">
+    <meta name="author" content="VoltTools">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

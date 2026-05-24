@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>QR Code Generator - Free Online QR Creator | ToolNova</title>
+  <title>QR Code Generator - Free Online QR Creator | VoltTools</title>
 
   <meta
     name="description"
@@ -17,7 +17,7 @@
     name="keywords"
     content="qr code generator, free qr code creator, qr maker, url qr code generator, online qr generator">
 
-  <meta name="author" content="ToolNova">
+  <meta name="author" content="VoltTools">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

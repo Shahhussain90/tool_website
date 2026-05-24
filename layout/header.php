@@ -3,12 +3,12 @@
   <div class="container nav-wrapper">
 
     <a href="<?php echo BASE_URL; ?>" class="logo">
-      <img src="<?php echo BASE_URL; ?>files/images/logo_main2.png" alt="ToolNova Logo">
+      <img src="<?php echo BASE_URL; ?>files/images/logo_main2.png" alt="VoltTools Logo">
     </a>
 
     <nav class="nav-links">
    <a href="<?php echo BASE_URL; ?>">Home</a>
-      <a href="<?php echo BASE_URL; ?>#tools">Tools</a>
+      <a href="<?php echo BASE_URL; ?>#tools">Popular Tools</a>
 
       <!-- Mega Dropdown -->
       <div class="mega-dropdown">
@@ -25,23 +25,23 @@
             <div class="mega-column">
               <h4>📈 Trading Tools</h4>
 
-              <a href="<?php echo BASE_URL; ?>tools/compound_calculator.php">
+              <a href="<?php echo BASE_URL; ?>tools/compound_calculator">
                 Compound Calculator
               </a>
 
-              <a href="<?php echo BASE_URL; ?>tools/riskreward.php">
+              <a href="<?php echo BASE_URL; ?>tools/riskreward">
                 Risk Reward Calculator
               </a>
 
-              <!-- <a href="position-size-calculator.php">
+              <!-- <a href="position-size-calculator">
                 Position Size Calculator
               </a>
 
-              <a href="forex-pip-calculator.php">
+              <a href="forex-pip-calculator">
                 Forex Pip Calculator
               </a>
 
-              <a href="crypto-profit-calculator.php">
+              <a href="crypto-profit-calculator">
                 Crypto Profit Calculator
               </a> -->
             </div>
@@ -50,23 +50,23 @@
             <div class="mega-column">
               <h4>🔥 study tools</h4>
 
-              <a href="<?php echo BASE_URL; ?>tools/time.php">
+              <a href="<?php echo BASE_URL; ?>tools/time">
                 study timer
               </a>
 
-              <!-- <a href="ai-hook-generator.php">
+              <!-- <a href="ai-hook-generator">
                 AI Hook Generator
               </a>
 
-              <a href="caption-generator.php">
+              <a href="caption-generator">
                 Caption Generator
               </a>
 
-              <a href="bio-generator.php">
+              <a href="bio-generator">
                 Bio Generator
               </a>
 
-              <a href="youtube-title-generator.php">
+              <a href="youtube-title-generator">
                 YouTube Title Generator
               </a> -->
             </div>
@@ -75,23 +75,23 @@
             <div class="mega-column">
               <h4>🛠 Utility Tools</h4>
 
-              <a href="<?php echo BASE_URL; ?>tools/Qrcodegenerator.php">
+              <a href="<?php echo BASE_URL; ?>tools/Qrcodegenerator">
                 QR Code Generator
               </a>
 
-              <!-- <a href="image-compressor.php">
+              <!-- <a href="image-compressor">
                 Image Compressor
               </a>
 
-              <a href="gradient-generator.php">
+              <a href="gradient-generator">
                 Gradient Generator
               </a>
 
-              <a href="meta-tag-generator.php">
+              <a href="meta-tag-generator">
                 Meta Tag Generator
               </a>
 
-              <a href="json-formatter.php">
+              <a href="json-formatter">
                 JSON Formatter
               </a> -->
             </div>
@@ -100,23 +100,23 @@
             <div class="mega-column">
               <h4>🚀 SEO Tools</h4>
 
-              <a href="<?php echo BASE_URL; ?>tools/keywordchecker.php">
+              <a href="<?php echo BASE_URL; ?>tools/keywordchecker">
                 Keyword Density Checker
               </a>
 
-              <!-- <a href="robots-generator.php">
+              <!-- <a href="robots-generator">
                 Robots.txt Generator
               </a>
 
-              <a href="sitemap-generator.php">
+              <a href="sitemap-generator">
                 Sitemap Generator
               </a>
 
-              <a href="schema-generator.php">
+              <a href="schema-generator">
                 Schema Generator
               </a>
 
-              <a href="meta-preview-tool.php">
+              <a href="meta-preview-tool">
                 Meta Preview Tool
               </a> -->
             </div>

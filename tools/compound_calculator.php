@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO -->
-<title>Compound Calculator - Trading & Investment Growth Tool | ToolNova</title>
+<title>Compound Calculator - Trading & Investment Growth Tool | VoltTools</title>
 
 <meta
   name="description"
@@ -17,7 +17,7 @@
   name="keywords"
   content="compound calculator, trading calculator, forex compound calculator, crypto calculator, investment growth calculator, compounding tool">
 
-<meta name="author" content="ToolNova">
+<meta name="author" content="VoltTools">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">

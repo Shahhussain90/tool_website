@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus Timer & Productivity Dashboard | ToolNova</title>
-    <meta name="description" content="Boost focus, track deep work sessions, manage tasks, run Pomodoro timers, and improve productivity with ToolNova's modern focus timer dashboard.">
+    <title>Focus Timer & Productivity Dashboard | VoltTools</title>
+    <meta name="description" content="Boost focus, track deep work sessions, manage tasks, run Pomodoro timers, and improve productivity with VoltTools's modern focus timer dashboard.">
     <meta name="keywords" content="focus timer, pomodoro timer, productivity dashboard, task manager, study timer, countdown timer, work timer, focus app">
-    <meta name="author" content="ToolNova">
+    <meta name="author" content="VoltTools">
 
     <link rel="apple-touch-icon" sizes="180x180" href="../files/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../files/images/favicon-32x32.png">
@@ -1129,9 +1129,9 @@ function escHtml(str) {
 function updatePageTitle() {
     if (state.running) {
         const secs = state.mode === 'countup' ? state.elapsed : Math.max(0, state.totalSecs - state.elapsed);
-        document.title = fmtTime(secs) + ' — Focus Timer | ToolNova';
+        document.title = fmtTime(secs) + ' — Focus Timer | VoltTools';
     } else {
-        document.title = 'Focus Timer & Productivity Dashboard | ToolNova';
+        document.title = 'Focus Timer & Productivity Dashboard | VoltTools';
     }
 }
 setInterval(updatePageTitle, 1000);

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta -->
-  <title>ToolNova - Free Online Trading, AI & Utility Tools</title>
+  <title>VoltTools - Free Online Trading, AI & Utility Tools</title>
   <meta name="description" content="Discover powerful free online tools including trading calculators, AI content generators, QR generators, hashtag tools, image utilities, and more." />
   <meta name="keywords" content="free online tools, trading calculator, qr generator, hashtag generator, compound calculator, utility tools, creator tools" />
-  <meta name="author" content="ToolNova" />
+  <meta name="author" content="VoltTools" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="files/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="files/images/favicon-32x32.png">
@@ -16,7 +16,7 @@
   <link rel="manifest" href="files/images/site.webmanifest">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ToolNova - Free Online Tools" />
+  <meta property="og:title" content="VoltTools - Free Online Tools" />
   <meta property="og:description" content="Modern online tools for creators, traders, developers, and students." />
   <meta property="og:type" content="website" />
 
@@ -111,7 +111,7 @@
 
       <div class="section-header">
         <span>Popular Tools</span>
-        <h2>Explore Free Utility Tools</h2>
+        <h2>Explore most popular Free Utility Tools</h2>
         <p>
           Discover modern online tools designed for creators, developers, traders, marketers, and students.
         </p>
@@ -128,52 +128,24 @@
 
         <div class="tool-card">
           <div class="tool-icon">💰</div>
-          <h3>Position Size Calculator</h3>
-          <p>Manage risk properly with accurate position sizing.</p>
-          <a href="#">Open Tool →</a>
+          <h3>Seo Keyword density checker</h3>
+          <p>Check the density of keywords in your content for better SEO.</p>
+          <a href="<?php echo BASE_URL ?>tools/keywordchecker.php">Open Tool →</a>
         </div>
 
         <div class="tool-card">
           <div class="tool-icon">🔥</div>
-          <h3>Hashtag Generator</h3>
-          <p>Generate viral hashtags for Instagram, TikTok, and YouTube.</p>
-          <a href="#">Open Tool →</a>
+          <h3>Trading Risk Reward Calculator</h3>
+          <p>Calculate Risk and Reward based on your trading parameters.</p>
+          <a href="<?php echo BASE_URL ?>tools/riskreward.php">Open Tool →</a>
         </div>
 
          <div class="tool-card">
           <div class="tool-icon">🎨</div>
-          <h3>Gradient Generator</h3>
-          <p>Create beautiful CSS gradients for websites and apps.</p>
-          <a href="#">Open Tool →</a>
+          <h3>Pomodoro Timer</h3>
+          <p>The tool include everything you require to lock in</p>
+          <a href="<?php echo BASE_URL ?>tools/time.php">Open Tool →</a>
         </div>
-<!--
-        <div class="tool-card">
-          <div class="tool-icon">🔳</div>
-          <h3>QR Code Generator</h3>
-          <p>Create QR codes instantly for URLs, text, and business cards.</p>
-          <a href="#">Open Tool →</a>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">📝</div>
-          <h3>AI Hook Generator</h3>
-          <p>Create engaging social media hooks and captions instantly.</p>
-          <a href="#">Open Tool →</a>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">📷</div>
-          <h3>Image Compressor</h3>
-          <p>Compress images without losing visual quality.</p>
-          <a href="#">Open Tool →</a>
-        </div>
-
-        <div class="tool-card">
-          <div class="tool-icon">⚡</div>
-          <h3>Meta Tag Generator</h3>
-          <p>Generate SEO meta tags for websites and blogs.</p>
-          <a href="#">Open Tool →</a>
-        </div> -->
 
       </div>
     </div>
@@ -224,7 +196,7 @@
     <div class="container">
 
       <div class="section-header">
-        <span>Why Choose ToolNova</span>
+        <span>Why Choose VoltTools</span>
         <h2>🆓 Free to Use</h2>
         <p>
           All core tools are accessible without any cost, making powerful utilities available to everyone.

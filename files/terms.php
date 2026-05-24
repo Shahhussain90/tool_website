@@ -6,11 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Terms & Conditions | ToolNova</title>
+  <title>Terms & Conditions | VoltTools</title>
 
-  <meta name="description" content="Read ToolNova Terms and Conditions before using our free online tools and services.">
-  <meta name="keywords" content="terms and conditions, toolnova terms, website terms, usage policy">
-  <meta name="author" content="ToolNova">
+  <meta name="description" content="Read VoltTools Terms and Conditions before using our free online tools and services.">
+  <meta name="keywords" content="terms and conditions, VoltTools terms, website terms, usage policy">
+  <meta name="author" content="VoltTools">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,12 +67,11 @@
 
 <body>
 
-<?php include '../layout/header.php'; ?>
 
 <section class="tool-hero">
   <div class="container">
     <h1>Terms & Conditions</h1>
-    <p>Please read these terms carefully before using ToolNova tools and services.</p>
+    <p>Please read these terms carefully before using VoltTools tools and services.</p>
   </div>
 </section>
 
@@ -84,7 +83,7 @@
 
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By accessing ToolNova, you agree to comply with these Terms and Conditions. If you do not agree, please do not use the website.
+          By accessing VoltTools, you agree to comply with these Terms and Conditions. If you do not agree, please do not use the website.
         </p>
 
         <h2>2. Use of Services</h2>
@@ -94,12 +93,12 @@
 
         <h2>3. Intellectual Property</h2>
         <p>
-          All content, design, and tools on ToolNova are owned by the website unless otherwise stated. You may not copy or redistribute without permission.
+          All content, design, and tools on VoltTools are owned by the website unless otherwise stated. You may not copy or redistribute without permission.
         </p>
 
         <h2>4. Limitations of Liability</h2>
         <p>
-          ToolNova is not responsible for any losses or damages resulting from the use of our tools. All tools are provided "as is".
+          VoltTools is not responsible for any losses or damages resulting from the use of our tools. All tools are provided "as is".
         </p>
 
         <h2>5. External Links</h2>
@@ -123,7 +122,6 @@
   </div>
 </section>
 
-<?php include '../layout/footer.php'; ?>
 
 </body>
 </html>
