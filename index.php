@@ -1,5 +1,39 @@
+<?php
+include_once 'files/connection.php';
+
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['contact_form'])) {
+
+  $name = trim($_POST['name']);
+  $email = trim($_POST['email']);
+  $subject = trim($_POST['subject']);
+  $message = trim($_POST['message']);
+
+  if (!empty($name) && !empty($email) && !empty($message)) {
+
+    // Prepare statement (prevents SQL injection)
+    $stmt = $con->prepare("
+      INSERT INTO contact_messages (name, email, subject, message)
+      VALUES (?, ?, ?, ?)
+    ");
+
+    $stmt->bind_param("ssss", $name, $email, $subject, $message);
+
+    if ($stmt->execute()) {
+      $success = "Message sent successfully!";
+    } else {
+      $error = "Failed to send message. Try again.";
+    }
+
+    $stmt->close();
+
+  } else {
+    $error = "Please fill all required fields.";
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,21 +59,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-/>
-  
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
 
 
   <link rel="stylesheet" href="css/style.css" />
 
-  
+
 </head>
+
 <body>
 
- <?php
-    include_once 'files/connection.php';
-    include 'layout/header.php'; ?>
+  <?php
+  include_once 'files/connection.php';
+  include 'layout/header.php'; ?>
 
   <!-- Hero -->
   <section class="hero">
@@ -70,8 +104,8 @@
       </div>
 
       <div class="hero-card">
-       
-       <img src="<?php echo BASE_URL ?>files/images/hero-1.jpg" alt="Hero Image">
+
+        <img src="<?php echo BASE_URL ?>files/images/hero-1.jpg" alt="Hero Image">
 
       </div>
 
@@ -140,7 +174,7 @@
           <a href="<?php echo BASE_URL ?>tools/riskreward.php">Open Tool →</a>
         </div>
 
-         <div class="tool-card">
+        <div class="tool-card">
           <div class="tool-icon">🎨</div>
           <h3>Pomodoro Timer</h3>
           <p>The tool include everything you require to lock in</p>
@@ -215,7 +249,7 @@
         <div class="content-card">
           <h3>🛠️ Wide Range of To</h3>
           <p>
-           From calculators to converters and productivity utilities, everything you need is available in one centralized platform.
+            From calculators to converters and productivity utilities, everything you need is available in one centralized platform.
           </p>
         </div>
 
@@ -243,55 +277,100 @@
       <div class="content-grid">
 
         <div class="content-card">
-  <h3>What is this website used for?</h3>
-  <p>
-    This platform provides a collection of online tools designed to help with calculations, conversions, productivity, and daily digital tasks—all in one place.
-  </p>
-</div>
+          <h3>What is this website used for?</h3>
+          <p>
+            This platform provides a collection of online tools designed to help with calculations, conversions, productivity, and daily digital tasks—all in one place.
+          </p>
+        </div>
 
-<div class="content-card">
-  <h3>Are the tools free to use?</h3>
-  <p>
-    Yes, all core tools are completely free to use with no hidden charges or subscription requirements.
-  </p>
-</div>
+        <div class="content-card">
+          <h3>Are the tools free to use?</h3>
+          <p>
+            Yes, all core tools are completely free to use with no hidden charges or subscription requirements.
+          </p>
+        </div>
 
-<div class="content-card">
-  <h3>Is my data safe while using these tools?</h3>
-  <p>
-    Yes, most tools run directly in your browser and we do not store any sensitive user data.
-  </p>
-</div>
+        <div class="content-card">
+          <h3>Is my data safe while using these tools?</h3>
+          <p>
+            Yes, most tools run directly in your browser and we do not store any sensitive user data.
+          </p>
+        </div>
 
-<div class="content-card">
-  <h3>What types of tools are available?</h3>
-  <p>
-    The platform includes calculators, converters, utility tools, and productivity helpers for everyday use.
-  </p>
-</div>
+        <div class="content-card">
+          <h3>What types of tools are available?</h3>
+          <p>
+            The platform includes calculators, converters, utility tools, and productivity helpers for everyday use.
+          </p>
+        </div>
 
-<div class="content-card">
-  <h3>Do I need to create an account?</h3>
-  <p>
-    No signup is required. You can instantly access and use all tools without creating an account.
-  </p>
-</div>
+        <div class="content-card">
+          <h3>Do I need to create an account?</h3>
+          <p>
+            No signup is required. You can instantly access and use all tools without creating an account.
+          </p>
+        </div>
 
-<div class="content-card">
-  <h3>Can I suggest a new tool?</h3>
-  <p>
-   Yes, user suggestions are welcome and can be added to future updates based on demand and usefulness.
-  </p>
-</div>
+        <div class="content-card">
+          <h3>Can I suggest a new tool?</h3>
+          <p>
+            Yes, user suggestions are welcome and can be added to future updates based on demand and usefulness.
+          </p>
+        </div>
 
       </div>
+
+    </div>
+  </section>
+<!-- <?php if (!empty($success)) : ?>
+  <p style="color:green; font-weight:600;">
+    <?= $success ?>
+  </p>
+<?php endif; ?>
+
+<?php if (!empty($error)) : ?>
+  <p style="color:red; font-weight:600;">
+    <?= $error ?>
+  </p>
+<?php endif; ?> -->
+  <!-- Contact / Suggestion -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <span>Contact Us</span>
+        <h2>💡 Suggest a Tool / Send Feedback</h2>
+        <p>Have an idea or issue? Send it directly to us.</p>
+      </div>
+
+      <form method="POST" class="contact-form">
+
+        <div class="form-grid">
+
+          <input type="text" name="name" placeholder="Your Name" required>
+
+          <input type="email" name="email" placeholder="Your Email" required>
+
+        </div>
+
+        <input type="text" name="subject" placeholder="Subject (optional)">
+
+        <textarea name="message" rows="6" placeholder="Write your suggestion..." required></textarea>
+
+        <!-- hidden flag -->
+        <input type="hidden" name="contact_form" value="1">
+
+        <button type="submit">Send Message</button>
+
+      </form>
 
     </div>
   </section>
 
   <!-- Footer -->
   <?php include 'layout/footer.php'; ?>
- 
+
 
 </body>
+
 </html>

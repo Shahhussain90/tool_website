@@ -8,7 +8,10 @@
 
   <!-- SEO -->
   <title>QR Code Generator - Free Online QR Creator | VoltTools</title>
-
+ <link rel="apple-touch-icon" sizes="180x180" href="../files/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../files/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../files/images/favicon-16x16.png">
+    <link rel="manifest" href="../files/images/site.webmanifest">
   <meta
     name="description"
     content="Generate free QR codes instantly for URLs, text, social media links, contact details, and websites with our modern QR code generator tool.">

@@ -7,8 +7,9 @@
     </a>
 
     <nav class="nav-links">
-   <a href="<?php echo BASE_URL; ?>">Home</a>
+      <a href="<?php echo BASE_URL; ?>">Home</a>
       <a href="<?php echo BASE_URL; ?>#tools">Popular Tools</a>
+      <a href="<?php echo BASE_URL; ?>#contact">Contact</a>
 
       <!-- Mega Dropdown -->
       <div class="mega-dropdown">
