@@ -55,10 +55,10 @@
                 study timer
               </a>
 
-              <!-- <a href="ai-hook-generator">
-                AI Hook Generator
+              <a href="<?php echo BASE_URL; ?>tools/passwordgenerator">
+                random password generator
               </a>
-
+ <!--
               <a href="caption-generator">
                 Caption Generator
               </a>
